@@ -672,6 +672,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.0+1"
+  teia_dart:
+    dependency: "direct main"
+    description:
+      path: "../teia/teia-dart"
+      relative: true
+    source: path
+    version: "0.0.1"
   term_glyph:
     dependency: transitive
     description:

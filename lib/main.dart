@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:teia_dart/domain/teia.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider(create: (_) => MainBloc()),
+        Provider(
+          create: (_) => Teia(),
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Template',
@@ -38,8 +42,7 @@ ThemeData _buildTheme(brightness) {
   var baseTheme = ThemeData(brightness: brightness);
 
   return baseTheme.copyWith(
-    textTheme: GoogleFonts.poppinsTextTheme(baseTheme.textTheme),
-    colorScheme: ColorScheme.fromSwatch()
-        .copyWith(secondary: const Color.fromARGB(255, 53, 85, 62)),
+    textTheme: GoogleFonts.jostTextTheme(baseTheme.textTheme),
+    colorScheme: ColorScheme.fromSwatch(),
   );
 }

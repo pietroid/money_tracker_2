@@ -45,6 +45,8 @@ dependencies:
   json_annotation: ^4.8.1
   dev: ^1.0.0
   build_runner: ^2.4.8
+  teia_dart: 
+    path: ../teia/teia-dart
 
 dev_dependencies:
   flutter_test:
