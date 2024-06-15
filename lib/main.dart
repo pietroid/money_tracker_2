@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:teia_dart/domain/teia.dart';
+import 'package:teia_dart/core/domain/teia.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,9 +1,9 @@
-import 'package:teia_dart/domain/entities/event.dart';
-import 'package:teia_dart/domain/entities/event_type.dart';
+import 'package:teia_dart/core/domain/entities/event.dart';
+import 'package:teia_dart/core/domain/entities/event_type.dart';
 
 class Transaction extends Event {
-  final double value;
-  final String description;
+  double value;
+  String description;
 
   Transaction({
     required this.value,
