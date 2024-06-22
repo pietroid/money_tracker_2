@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' hide Card;
 import 'package:flutter_template/entities/transaction.dart';
-import 'package:flutter_template/widgets/editing_card.dart';
-import 'package:flutter_template/widgets/transaction_card.dart';
+import 'package:flutter_template/presentation/widgets/editing_card.dart';
+import 'package:flutter_template/presentation/widgets/transaction_card.dart';
 import 'package:teia_dart/core/domain/teia.dart';
 import 'package:teia_dart/utils/presentation/teia_builder.dart';
 

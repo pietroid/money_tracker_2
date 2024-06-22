@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/widgets/base_card.dart';
+import 'package:flutter_template/presentation/widgets/base_card.dart';
 
 class TransactionCard extends StatelessWidget {
   final String description;

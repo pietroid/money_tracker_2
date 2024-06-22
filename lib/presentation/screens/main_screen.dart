@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/entities/transaction.dart';
-import 'package:flutter_template/widgets/history.dart';
-import 'package:flutter_template/widgets/main_balance.dart';
+import 'package:flutter_template/presentation/bottom_sheets/add_transaction_bottom_sheet.dart';
+import 'package:flutter_template/presentation/widgets/history.dart';
+import 'package:flutter_template/presentation/widgets/main_balance.dart';
 import 'package:teia_dart/core/domain/teia.dart';
 
 class MainScreen extends StatefulWidget {
@@ -38,7 +38,7 @@ class _MainScreenState extends State<MainScreen> {
           Icons.add,
         ),
         onPressed: () {
-          editingTransactions.add(Transaction(value: 10, description: ''));
+          showAddTransaction(context);
         },
         iconSize: 50,
         splashRadius: 30,
